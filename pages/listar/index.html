@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <link href="/css.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="app">
+
+    <v-app>
+      <template>
+        <v-card class="overflow-hidden">
+
+          <v-app-bar label="Search" color="#fcb69f" dark shrink-on-scroll
+            src="https://picsum.photos/1920/1080?random">
+
+            <template v-slot:img="{ props }">
+              <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
+            </template>
+
+            <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+
+            <v-toolbar-title>Clientes</v-toolbar-title>
+
+            <v-spacer></v-spacer>
+
+            <v-text-field v-model="search" label="Buscar cliente" single-line hide-details></v-text-field>
+          </v-app-bar>
+          
+          <v-main>
+            <template>
+              <v-card>
+                <v-data-table :headers="headers" :items="data" :search="search"></v-data-table>
+              </v-card>
+            </template>
+          </v-main>
+        </v-card>
+
+        <template>
+          <v-navigation-drawer
+            v-model="drawer"
+            fixed
+            temporary
+          >
+            <v-list nav dense 
+            >
+                <v-list-item href="/">
+                  <v-list-item-icon>
+                    <v-icon>mdi-home</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>Home</v-list-item-title>
+                </v-list-item>
+      
+                <v-list-item href="/pages/novo/">
+                  <v-list-item-icon >
+                    <v-icon>mdi-account</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>Cadastrar usuário</v-list-item-title>
+                </v-list-item>
+                   
+            </v-list>
+          </v-navigation-drawer>
+      </template> 
+
+      </template>
+      
+
+    </v-app>
+    
+    </div>
+
+
+
+  <div id="app2">
+
+
+
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  let url = 'http://localhost:3333/cadastro'
+  new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data() {
+      return {
+
+        search: '',
+        drawer: "false",
+        page: '',
+        headers: [
+          { text: 'Nome', align: 'start', value: 'name' },
+          { text: 'Email', value: 'email' },
+          { text: 'CPF', value: 'cpf' },
+          { text: 'Data de Nascimento', value: 'birthdate' },
+          { text: 'Cidade', value: 'city' },
+          { text: 'Estado', value: 'uf' },
+        ],
+        data: [
+
+        ],
+        methods: [
+
+          axios.get(url)
+            .then(resp => {
+              this.data = resp.data;
+              //console.log(resp.data);
+
+
+            })
+            .catch((error) => {
+              console.log(error);
+
+            })
+          // }
+        ]
+
+      }
+
+    },
+  }
+  )
+
+</script>

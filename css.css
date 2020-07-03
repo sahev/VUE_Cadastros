@@ -1,0 +1,27 @@
+#app {
+
+		color: white;
+}
+
+
+.v-list--nav {
+
+    position:fixed!important; 
+    top:135px; 
+
+}
+header {
+	position: fixed ;
+
+	z-index: 99999 ;
+}
+
+nav, main{
+	margin-top: 135px !important;
+}
+
+
+main {
+ 	padding: 2rem;
+}
+

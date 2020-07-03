@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+        <title>Menu</title>
+        <!-- <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts/carga.js"></script>
+        <script src="/scripts/deletar.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <meta name="viewport"
+                content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+
+
+        <!-- <link href="/css.css" rel="stylesheet"> -->
+
+</head>
+
+
+<div id="app">
+        <v-app>
+                <template>
+                        <v-card class="mx-auto" height="300" width="300">
+                                <v-navigation-drawer absolute dark
+                                        src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg" width="100%"
+                                        permanent>
+                                        <v-list>
+                                                <v-list-item v-for="([icon, text], i) in items" :key="i" link 
+                                                        >
+
+                                                        <v-list-item-icon>
+                                                                <v-icon>{{ icon }}</v-icon>
+
+                                                        </v-list-item-icon>
+
+                                                        <v-list-item-content>
+                                                                <v-list-item-title>{{ text }}</v-list-item-title>
+                                                               
+                                                        </v-list-item-content>
+
+                                                </v-list-item>
+                                        </v-list>
+                                </v-navigation-drawer>
+                        </v-card>
+                </template>
+        </v-app>
+
+        <!-- <button class="bg-button" onclick="location.href='/pages/listar/'" type="button">Listar Usuários</button>
+        <button class="bg-button" onclick="location.href='/novo.html'" type="button">Novo Usuário</button>
+        <button class="bg-button" onclick="carregardados(); alert('Carga realizada!')" type="button">Carga de dados</button>
+        <button class="bg-button" onclick="deletartodos(); alert('Cadastros deletados!')" type="button">Deletar todos usuários</button> -->
+</div>
+
+
+</html>
+
+<script>
+new Vue({
+el: '#app',
+vuetify: new Vuetify(),
+data: () => ({
+        items: [
+                ['add', 'Novo usuário'],
+                ['mdi-magnify', 'Buscar usuário'],
+                ['cloud_upload', 'Realizar carga de dados'],
+        ]
+
+}),
+})
+</script>

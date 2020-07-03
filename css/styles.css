@@ -1,0 +1,24 @@
+body {
+    background: #f0f0f5;
+    margin-top: 85px;
+    font-size: 10px;
+   
+    display: grid;
+    justify-content: center;
+}
+
+.bg-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+	background-color: #17a2b8!important
+}
+
+.bg-button:focus,
+.bg-button:hover,
+button.bg-button:focus,
+button.bg-button:hover {
+	background-color: #82cbd6!important
+}

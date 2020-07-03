@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Novo Usuário</title>
+    <link rel="stylesheet" href="/css/novo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/scripts/novo.js"></script>
+</head>
+
+<body>
+
+    <form id="frmForm" onsubmit="postData(); alert('Usuário cadastrado com sucesso!');">
+        <label for="inpName">Nome</label>
+        <input id="inpName" type="text">
+
+        <label for="inpEmail">Email</label>
+        <input id="inpEmail" type="email" required>
+
+        <label for="inpCpf">CPF</label>
+        <input id="inpCpf" type="text" required>
+
+        <label for="inpBirthdate">Data de nascimento</label>
+        <input id="inpBirthdate" type="date">
+
+        <label for="inpAddressline">Endereço</label>
+        <input id="inpAddressline" type="text">
+
+        <label for="inpCity">Cidade</label>
+        <input id="inpCity" type="text">
+
+        <label for="inpUF">UF</label>
+        <input id="inpUF" type="text">
+
+        <button class="bg-button" id="btnPost" type="submit">Enviar</button>
+        <button class="bg-button" onclick="location.href='/pages/listar/'" type="button">Listar usuários</button>
+        <button class="bg-button" onclick="location.href='/index.html'" type="button">Voltar ao menu</button>
+
+    </form>
+    
+</body>
+
+</html>

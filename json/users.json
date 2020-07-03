@@ -1,0 +1,102 @@
+[{
+   "id":"bdefa69e",
+   "name":"samuel",
+   "email":"samuel@sa.sa",
+   "cpf":"12312312387",
+   "birthdate":"1997-03-15",
+   "addressline":"RUA VISTA ALEGRE",
+   "city":"CARAPICUÍBA",
+   "uf":"sp"
+},
+{
+   "id":"1ededc90",
+   "name":"sara",
+   "email":"sara@sa.as",
+   "cpf":"12312312312",
+   "birthdate":"2018-01-17",
+   "addressline":"rua angelina 225",
+   "city":"jandira",
+   "uf":"sp"
+},
+{
+   "id":"f9a52747",
+   "name":"marcos",
+   "email":"marcos@sa.sa",
+   "cpf":"121211111",
+   "birthdate":"1997-03-15",
+   "addressline":"rua vista alegre 129",
+   "city":"CARAPICUÍBA",
+   "uf":"sp"
+},
+{
+   "id":"93eb3a90",
+   "name":"raquel",
+   "email":"raquel@sa.as",
+   "cpf":"2222222222",
+   "birthdate":"2000-01-30",
+   "addressline":"rua angelina 225",
+   "city":"Jandira",
+   "uf":"SP"
+},
+{
+   "id":"b3f5f10e",
+   "name":"Cassia Ap de Oliveira",
+   "email":"cassia@sa.sa",
+   "cpf":"555555555",
+   "birthdate":"2003-04-25",
+   "addressline":"rua boa vista",
+   "city":"são paulo",
+   "uf":"SP"
+},
+ {
+    "id": "812f7dae",
+    "name": "Samuel Evangelista",
+    "email": "samuel@gmail.com",
+    "cpf": "6666666666",
+    "birthdate": "1997-02-03",
+    "addressline": "Alameda Xingu",
+    "city": "Barueri",
+    "uf": "SP"
+  },
+  {
+    "id": "f4abd9ec",
+    "name": "Sara Alcaras",
+    "email": "saraa@gmail.com",
+    "cpf": "12345678",
+    "birthdate": "2000-03-02",
+    "addressline": "Rua Mercedes",
+    "city": "São Paulo",
+    "uf": "São Paulo"
+  },
+  {
+    "id": "4590b822",
+    "name": "Rachel Oliveira",
+    "email": "rachel@gmail.com",
+    "cpf": "5625189555",
+    "birthdate": "2002-05-02",
+    "addressline": "Rua Katy",
+    "city": "Barueri",
+    "uf": "SP"
+  },
+  {
+    "id": "e18938d5",
+    "name": "Fulano de tal",
+    "email": "fulaninho@gmail.com",
+    "cpf": "54789652",
+    "birthdate": "2006-06-06",
+    "addressline": "Rua dos marceneiros",
+    "city": "Barueri",
+    "uf": "SP"
+  },
+  {
+    "id": "d09342dd",
+    "name": "Cassia",
+    "email": "cassinha@gmail.com",
+    "cpf": "12345678",
+    "birthdate": "2007-07-07",
+    "addressline": "Laapa",
+    "city": "Barueri",
+    "uf": "SP"
+  }
+  ]
+  
